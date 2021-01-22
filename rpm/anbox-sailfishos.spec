@@ -16,6 +16,7 @@ BuildRequires:  dbus-cpp-devel
 BuildRequires:  lxc-devel
 BuildRequires:  wayland-devel
 BuildRequires:  mesa-llvmpipe-libEGL-devel
+BuildRequires:  systemd-devel
 BuildRequires:  protobuf-compiler
 BuildRequires:  boost-devel
 BuildRequires:  pkgconfig(glib-2.0)
