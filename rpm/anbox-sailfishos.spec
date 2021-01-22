@@ -43,7 +43,7 @@ Requires:  libprocess-cpp2
   separate the Android system fully from the host.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}-%{version}/anbox
 
 %build
 mkdir -p build
