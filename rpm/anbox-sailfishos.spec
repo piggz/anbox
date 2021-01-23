@@ -47,8 +47,6 @@ Requires:  libprocess-cpp2
 %setup -q -n %{name}-%{version}/anbox
 
 %build
-pwd
-ls -lh
 truncate -s 0 cmake/FindGMock.cmake
 truncate -s 0 tests/CMakeLists.txt
 
