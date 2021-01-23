@@ -47,7 +47,10 @@ Requires:  libprocess-cpp2
 %setup -q -n %{name}-%{version}/anbox
 
 %build
-mkdir -p build
+truncate -s 0 anbox/cmake/FindGMock.cmake
+truncate -s 0 anbox/tests/CMakeLists.txt
+
+mkdir -p build  
 cd build
 %cmake -DUSE_SFDROID=ON -DBUILD_TESTING=OFF ..
 make %{?jobs:-j%jobs}
