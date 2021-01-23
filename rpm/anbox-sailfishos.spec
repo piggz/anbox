@@ -8,14 +8,14 @@ URL:        https://github.com/anbox/anbox
 Source:     %{name}-%{version}.tar.gz
 
 BuildRequires:  cmake
-BuildRequires:  mesa-llvmpipe-libEGL-devel
-BuildRequires:  mesa-llvmpipe-libGLESv2-devel
+BuildRequires:  pkgconfig(egl)
+BuildRequires:  pkgconfig(glesv2)
 BuildRequires:  SDL2-devel
 BuildRequires:  SDL2_image-devel
 BuildRequires:  dbus-cpp-devel
 BuildRequires:  lxc-devel
-BuildRequires:  wayland-devel
-BuildRequires:  mesa-llvmpipe-libEGL-devel
+BuildRequires:  pkgconfig(wayland)
+BuildRequires:  pkgconfig(wayland-egl)
 BuildRequires:  systemd-devel
 BuildRequires:  protobuf-compiler
 BuildRequires:  boost-devel
