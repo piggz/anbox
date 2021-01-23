@@ -68,7 +68,7 @@ install -Dm 644 %{_sourcedir}/anbox-container-manager.service %{buildroot}/%{_li
 install -Dm 644 %{_sourcedir}/anbox-session-manager.service %{buildroot}/%{_libdir}/systemd/user/anbox-session-manager.service
 install -Dm 644 %{_sourcedir}/anbox-bridge.network %{buildroot}/%{_libdir}/systemd/network/80-anbox-bridge.network
 install -Dm 644 %{_sourcedir}/anbox-bridge.netdev %{buildroot}/%{_libdir}/systemd/network/80-anbox-bridge.netdev
-#install -Dm 644 rpm/99-anbox.rules %{buildroot}/%{_libdir}/udev/rules.d/99-anbox.rules
+install -Dm 644 rpm/99-anbox.rules %{buildroot}/%{_libdir}/udev/rules.d/99-anbox.rules
 install -Dm 644 %{_sourcedir}/anbox.desktop %{buildroot}/%{_datadir}/applications/anbox.desktop
 install -Dm 644 snap/gui/icon.png %{buildroot}/%{_datadir}/icons/hicolor/512x512/apps/anbox.png
 
@@ -96,7 +96,7 @@ prepare-anbox
 %{_libdir}/systemd/user/anbox-session-manager.service
 %{_libdir}/systemd/network/80-anbox-bridge.network
 %{_libdir}/systemd/network/80-anbox-bridge.netdev
-#%{_libdir}/udev/rules.d/99-anbox.rules
+%{_libdir}/udev/rules.d/99-anbox.rules
 %{_datadir}/applications/anbox.desktop
 %{_datadir}/icons/hicolor/512x512/apps/anbox.png
 %{_datadir}/anbox/ui/loading-screen.png
