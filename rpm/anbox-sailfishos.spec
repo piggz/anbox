@@ -14,7 +14,6 @@ BuildRequires:  SDL2-devel
 BuildRequires:  SDL2_image-devel
 BuildRequires:  dbus-cpp-devel
 BuildRequires:  lxc-devel
-BuildRequires:  pkgconfig(wayland)
 BuildRequires:  pkgconfig(wayland-egl)
 BuildRequires:  systemd-devel
 BuildRequires:  protobuf-compiler
