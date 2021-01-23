@@ -53,9 +53,9 @@ truncate -s 0 cmake/FindGMock.cmake
 truncate -s 0 tests/CMakeLists.txt
 
 #Patch sdbus-cpp
-sed -i 's/cmake_minimum_required(VERSION 3.13)/cmake_minimum_required(VERSION 3.11)/g' external/sdbus-cpp/CMakeLists.txt
+#sed -i 's/cmake_minimum_required(VERSION 3.13)/cmake_minimum_required(VERSION 3.11)/g' external/sdbus-cpp/CMakeLists.txt
 #sed -i '0,/OFF/{s/OFF/ON/}' external/sdbus-cpp/CMakeLists.txt
-sed -i 's/GLOBAL libsystemd>=236/libsystemd>=225/g' external/sdbus-cpp/CMakeLists.txt
+#sed -i 's/GLOBAL libsystemd>=236/libsystemd>=225/g' external/sdbus-cpp/CMakeLists.txt
 
 
 mkdir -p build  
