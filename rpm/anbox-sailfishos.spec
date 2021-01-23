@@ -26,6 +26,7 @@ BuildRequires:  properties-cpp-devel
 BuildRequires:  pkgconfig(libcap)
 BuildRequires:  meson
 BuildRequires:  ninja
+BuildRequires:  git
 
 Requires:  boost-filesystem
 Requires:  boost-iostreams
