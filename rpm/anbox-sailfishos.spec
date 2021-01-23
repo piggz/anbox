@@ -51,7 +51,7 @@ truncate -s 0 cmake/FindGMock.cmake
 truncate -s 0 tests/CMakeLists.txt
 
 #Allow cmake 3.11
-sed -i 's/cmake_minimim_version/\#cmake_minimim_version/g' external/sdbus-cpp/CMakeLists.txt
+sed -i 's/cmake_minimim_required/#cmake_minimim_required/g' external/sdbus-cpp/CMakeLists.txt
 
 mkdir -p build  
 cd build
