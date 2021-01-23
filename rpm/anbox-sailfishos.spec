@@ -24,6 +24,8 @@ BuildRequires:  pkgconfig(sdl2)
 BuildRequires:  protobuf-lite-devel
 BuildRequires:  properties-cpp-devel
 BuildRequires:  pkgconfig(libcap)
+BuildRequires:  meson
+BuildRequires:  ninja
 
 Requires:  boost-filesystem
 Requires:  boost-iostreams
