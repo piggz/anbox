@@ -12,7 +12,6 @@ BuildRequires:  pkgconfig(egl)
 BuildRequires:  pkgconfig(glesv2)
 BuildRequires:  SDL2-devel
 BuildRequires:  SDL2_image-devel
-BuildRequires:  dbus-cpp-devel
 BuildRequires:  lxc-devel
 BuildRequires:  pkgconfig(wayland-egl)
 BuildRequires:  systemd-devel
